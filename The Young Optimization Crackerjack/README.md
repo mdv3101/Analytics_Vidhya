@@ -1,6 +1,7 @@
 https://datahack.analyticsvidhya.com/contest/the-young-optimization-crackerjack-contest/
 
 Problem Statement
+
 ABC is a global manufacturer of pharmaceutical products serving customers across 18 regions.They have 81 SKUs in their portfolio.
 
 ABC has 3 manufacturing plants (A, B, & C) in different parts of the world. Each plant has multiple production lines and different production costs. Shipping costs from each plant differs for all 18 regions.
@@ -8,6 +9,7 @@ ABC has 3 manufacturing plants (A, B, & C) in different parts of the world. Each
 A senior client, VP – Production Planning, is wondering how to plan production for the coming quarter.
 
 Objective is twofold: -
+
 
 Forecast demand with high accuracy
 Meet minimum production constraints and maximize profit margin ((revenue -cost)/cost).
@@ -19,6 +21,7 @@ Sequencing of product for each production line
 The ideal output the client is looking for is a 3-month forward looking schedule for each production line and order fulfillment rate for each product. Provide forecasted demand values and shipped volumes for plant-region combination as well.
 
 Constraints:
+
 Active days for production and change-over per month is 30 days
 Consecutive days of production per batch is 14 days
 You must do production at least one day for each month
@@ -43,6 +46,7 @@ changeover_cost.csv: Changeover unit cost by production lines ($/ Changeover)For
 
 
 Tips for solving the crackerjack competition
+
 The approach we recommend is to divide this problem into multiple smaller sub-problems and solve them using the 80-20 approach. The aim is to reach a feasible solution and then attempt to increase its optimality. A few examples of sub-problems are:
 
 forecasting
@@ -69,4 +73,3 @@ If required, some “hand adjustments” can also be made. We don’t necessaril
 
 We can then move onto building a similar solution for the remaining two months.
 
-Don’t lose hope, keep trying!
